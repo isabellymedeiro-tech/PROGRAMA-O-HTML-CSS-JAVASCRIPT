@@ -46,7 +46,7 @@ O projeto possui:
 
 O projeto está hospedado no GitHub Pages:
 
-[🔗 AgroConecta 2030](https://<seu-usuario>.github.io/AgroConecta2030/)
+[🔗 AgroConecta 2030](https://isabellymedeiro-tech.github.io/AgroConecta_2030/)
 
 ---
 
