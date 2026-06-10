@@ -1,25 +1,53 @@
-# AgroConsciente - Noroeste do Paraná
+# AgroConecta 2030 🌱💻
 
-## Tema Agrinho 2026
-"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente".
-
-## Objetivo do Projeto e Visão Crítica
-O **AgroConsciente** é uma aplicação web voltada para estudantes e produtores da região noroeste do Estado do Paraná. Nossa região é uma grande potência agrícola, porém sofre impactos diretos das secas e erosões causadas pela degradação das matas ciliares. 
-O objetivo deste projeto é mostrar que o "agro forte" não é aquele que devasta 100% das terras para plantio. Através de um simulador interativo, o projeto emite um diagnóstico crítico calculando o percentual preservado da propriedade. O simulador alerta que desmatar nascentes compromete as chuvas do futuro, inviabilizando a própria lavoura e o sustento econômico da cidade.
-
-## Tecnologias Utilizadas
-Projeto 100% autoral construído sem frameworks externos, atendendo às regras da Subcategoria 3:
-- **HTML5**: Estruturação semântica de formulários e layout.
-- **CSS3**: Layout Flexbox, uso de variáveis de ambiente e Media Queries (Site totalmente responsivo).
-- **JavaScript (Vanilla)**: Captura de eventos, processamento lógico de cálculo percentual e manipulação dinâmica do DOM.
-
-## Instruções de Uso
-1. Acesse o projeto pelo link do GitHub Pages (inserir o link final aqui).
-2. Na aba "Simulador de Equilíbrio Ambiental", insira seu nome ou o de uma propriedade fictícia.
-3. Insira a área total em hectares.
-4. Insira a quantidade de área atualmente preservada (mata ciliar, reserva).
-5. Clique em "Verificar Sustentabilidade".
-6. O sistema retornará uma análise crítica e visual (Verde para aprovação / Vermelho para estado de alerta) baseado na realidade ambiental paranaense.
+**Projeto desenvolvido para o Concurso Agrinho Programação 2026 – Subcategoria 3: Ensino Médio**
 
 ---
-*Projeto participante do Concurso Agrinho 2026 - Subcategoria 3.*
+
+## Sobre o Projeto
+
+O **AgroConecta 2030** é um site interativo que demonstra como a tecnologia pode conectar produtores rurais e consumidores urbanos, promovendo sustentabilidade, redução de desperdício e valorização da agricultura familiar.
+
+O projeto possui:
+
+- Layout responsivo e moderno.
+- Seções com cards interativos, tabelas e galeria de imagens.
+- Contadores animados de impacto.
+- Formulário de participação de usuários.
+- Tema claro/escuro e animações CSS.
+- JavaScript avançado com validação de formulário, interatividade e contadores dinâmicos.
+
+---
+
+## Funcionalidades
+
+1. **Menu de navegação** com links para seções do site.
+2. **Hero section** com botão que rola a página até as soluções.
+3. **Cards interativos** destacando problemas e soluções.
+4. **Galeria de imagens** com hover effects.
+5. **Tabela de impactos** e **curiosidades sobre sustentabilidade**.
+6. **Formulário** com validação e registro no console.
+7. **Contadores animados** de produtores conectados, consumidores atendidos e redução de desperdício.
+8. **Relógio digital**.
+9. **Tema claro/escuro**.
+
+---
+
+## Tecnologias utilizadas
+
+- HTML5 semântico
+- CSS3 (Flexbox, Grid, variáveis, animações)
+- JavaScript ES6+ (DOM, eventos, arrays, objetos)
+- GitHub Pages para hospedagem
+
+---
+
+## Como acessar
+
+O projeto está hospedado no GitHub Pages:
+
+[🔗 AgroConecta 2030](https://<seu-usuario>.github.io/AgroConecta2030/)
+
+---
+
+## Estrutura do Projeto
