@@ -1,0 +1,422 @@
+/* ==========================
+   AGRINHO 2026 - AGROCONECTA
+   STYLE.CSS
+========================== */
+
+:root{
+    --verde-principal:#2E7D32;
+    --verde-claro:#66BB6A;
+    --verde-escuro:#1B5E20;
+    --amarelo:#FBC02D;
+    --branco:#ffffff;
+    --cinza:#f5f5f5;
+    --texto:#333333;
+    --sombra:0 10px 25px rgba(0,0,0,0.12);
+    --transicao:0.4s;
+}
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--cinza);
+    color:var(--texto);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(
+        135deg,
+        var(--verde-principal),
+        var(--verde-escuro)
+    );
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:var(--sombra);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+header h1{
+    color:var(--branco);
+    font-size:2rem;
+    letter-spacing:1px;
+}
+
+/* MENU */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:var(--transicao);
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    width:0;
+    height:3px;
+    background:var(--amarelo);
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    transition:var(--transicao);
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:var(--amarelo);
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("img/agro-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    color:white;
+    font-size:3.5rem;
+    margin-bottom:20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    color:white;
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+/* BOTÃO */
+
+button{
+    background:var(--amarelo);
+    color:black;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-size:1rem;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:var(--transicao);
+}
+
+button:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--sombra);
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:var(--verde-escuro);
+    margin-bottom:50px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicao);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:var(--verde-principal);
+    margin-bottom:15px;
+}
+
+/* GALERIA */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+figure{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicao);
+}
+
+figure:hover{
+    transform:scale(1.03);
+}
+
+figure img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+figcaption{
+    padding:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* TABELA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:var(--sombra);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+thead{
+    background:var(--verde-principal);
+    color:white;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f0f7f0;
+}
+
+tbody tr:hover{
+    background:#d9f5d9;
+}
+
+/* ASIDE */
+
+aside{
+    background:linear-gradient(
+        135deg,
+        var(--verde-principal),
+        var(--verde-claro)
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px;
+
+    margin:50px auto;
+
+    width:85%;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+}
+
+aside h2{
+    color:white;
+}
+
+/* FORMULÁRIO */
+
+form{
+    background:white;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+textarea{
+    padding:15px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    transition:var(--transicao);
+}
+
+input:focus,
+textarea:focus{
+    border-color:var(--verde-principal);
+}
+
+textarea{
+    resize:none;
+    min-height:150px;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--verde-escuro);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px){
+
+    header .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:70vh;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    section{
+        padding:70px 6%;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
